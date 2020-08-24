@@ -1,7 +1,7 @@
 <h1>Companies</h1>
 
 <div>
-    <button (click)= "getCompanies()">GET COMPANIES</button>
+    <button data-cy="btn-get-companies"  (click)= "getCompanies()">GET COMPANIES</button>
 </div>
 
 <br>
@@ -13,7 +13,7 @@
         <td>Standard Deviation</td>
     </thead>
     <tbody>
-        <tr *ngFor="let company of companies">
+        <tr data-cy="table-company-row" *ngFor="let company of companies">
             <td>{{company.name}}</td>
             <td>{{company.segment}}</td>
             <td>{{company.standardDeviation}}</td>
