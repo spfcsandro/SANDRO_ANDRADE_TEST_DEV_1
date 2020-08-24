@@ -4,6 +4,6 @@ class CompanyDTO {
 
     Long id
     String name
-    SegmentEnum segment
+    String segment
 	Double standardDeviation
 }

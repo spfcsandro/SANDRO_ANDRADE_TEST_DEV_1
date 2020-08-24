@@ -14,7 +14,7 @@ class BootStrap {
 
 		Company company1 = companyService.save(new Company(name: "Nitryx", segment: SegmentEnum.SOFTWARE))
 		Company company2 = companyService.save(new Company(name: "Volvo", segment: SegmentEnum.VEHICLES))
-		Company company3 = companyService.save(new Company(name: "DELL", segment: SegmentEnum.DRINKS))
+		Company company3 = companyService.save(new Company(name: "Heineken", segment: SegmentEnum.DRINKS))
 
 		def currentDay = LocalDateTime.now();
         LocalDateTime currentDayMinus30Days = currentDay.minusDays(30);

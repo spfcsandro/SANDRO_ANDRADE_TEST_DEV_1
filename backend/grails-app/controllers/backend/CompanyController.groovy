@@ -22,7 +22,7 @@ class CompanyController {
 							.map({company -> 
 						        CompanyDTO companyDTO = new CompanyDTO();
 						        companyDTO.setName(company.getName());
-						        companyDTO.setSegment(company.getSegment());
+						        companyDTO.setSegment(company.getSegment().name());
 						        companyDTO.setStandardDeviation(stockService.calculateSDByCompany(company));
 						        return companyDTO;
 						    }).collect(Collectors.toList());
