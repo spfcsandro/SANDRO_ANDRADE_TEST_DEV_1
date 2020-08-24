@@ -1,0 +1,22 @@
+<h1>Companies</h1>
+
+<div>
+    <button (click)= "getCompanies()">GET COMPANIES</button>
+</div>
+
+<br>
+
+<table *ngIf="companies">
+    <thead>
+        <td>Name</td>
+        <td>Segment</td>
+        <td>Standard Deviation</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let company of companies">
+            <td>{{company.name}}</td>
+            <td>{{company.segment}}</td>
+            <td>{{company.standardDeviation}}</td>
+        </tr>
+    </tbody>
+</table>
